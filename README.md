@@ -1,4 +1,7 @@
+
 # VKProgressHud
+
+![pk](https://user-images.githubusercontent.com/21070922/36742945-07ac7a8a-1c0f-11e8-8323-fe80ad4e2295.gif)
 
 Hey All! As it is obvious from the GIF, this project is a ```LoadingIndicator``` based on ```CoreAnimation```. <br />
 
@@ -28,7 +31,6 @@ Please note that ```croc``` is the name of Image you want in the Animation.
 6) Also the colour codes from the line ```circle.backgroundColor``` in ```VKProgressHud.Swift```. <br />
 7) Label text saying 'Loading' can be edited in in ```VKProgressHud.Swift```. <br />
 
-![pk](https://user-images.githubusercontent.com/21070922/36742945-07ac7a8a-1c0f-11e8-8323-fe80ad4e2295.gif)
 
 Crocodile Image : *Designed by Freepik from www.flaticon.com* <br />
 Animation: *Heavily inspired from https://dribbble.com/shots/2679536-Dragon-Loading-Indicator*
