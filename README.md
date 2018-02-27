@@ -31,6 +31,14 @@ Please note that ```croc``` is the name of Image you want in the Animation.
 6) Also the colour codes from the line ```circle.backgroundColor``` in ```VKProgressHud.Swift```. <br />
 7) Label text saying 'Loading' can be edited in in ```VKProgressHud.Swift```. <br />
 
+Concepts used:
 
+ ```let rotatorImageLayer: CALayer = CALayer()``` <br />
+ ```let replicatorCircleLayer = CAReplicatorLayer()``` <br />
+``` var circle = CALayer()``` <br />
+ ```var shapeLayerForCroc = CAShapeLayer()``` <br />
+ ```let gradientLabelLayer = CAGradientLayer()``` <br />
+ 
+ 
 Crocodile Image : *Designed by Freepik from www.flaticon.com* <br />
 Animation: *Heavily inspired from https://dribbble.com/shots/2679536-Dragon-Loading-Indicator*
