@@ -31,7 +31,7 @@ Please note that ```croc``` is the name of Image you want in the Animation.
 6) Also the colour codes from the line ```circle.backgroundColor``` in ```VKProgressHud.Swift```. <br />
 7) Label text saying 'Loading' can be edited in in ```VKProgressHud.Swift```. <br />
 
-Concepts used:
+**Concepts used:** <br />
 
  ```let rotatorImageLayer: CALayer = CALayer()``` <br />
  ```let replicatorCircleLayer = CAReplicatorLayer()``` <br />
