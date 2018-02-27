@@ -10,16 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var hudView : VKProgressHud?
+  
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func showHudClicked(_ sender: Any) {
+        hudView = VKProgressHud(crocImageName: "croc")
+        hudView?.showHUD(onView: self.view)
+        Timer.scheduledTimer(timeInterval: 15.0, target: self, selector: #selector(endAnime), userInfo: nil, repeats: false)
     }
-
-
+    
+    @objc func endAnime(){
+        hudView?.hideHUD()
+    }
+    
 }
+
 
