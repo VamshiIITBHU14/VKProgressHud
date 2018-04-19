@@ -152,14 +152,12 @@ class VKLabel: UIView {
     }()
     
     
-    let textAttributesForLabel: [NSAttributedStringKey: Any] = {
+     let textAttributesForLabel: [NSAttributedStringKey: Any] = {
         let ps = NSMutableParagraphStyle()
         ps.alignment = .center
         return [
-            NSAttributedStringKey.font: UIFont(
-                name: "Futura-Medium",
-                size: 12.0)!,
-            NSAttributedStringKey.paragraphStyle: ps
+            
+            NSParagraphStyleAttributeName as NSString: ps
         ]
     }()
     
@@ -167,10 +165,11 @@ class VKLabel: UIView {
         didSet {
             setNeedsDisplay()
             
-            let image = UIGraphicsImageRenderer(size: bounds.size)
+             let image = UIGraphicsImageRenderer(size: bounds.size)
                 .image { _ in
-                    text.draw(in: bounds, withAttributes: textAttributesForLabel)
+                    text.draw(in: bounds, withAttributes: textAttributesForLabel as [String : Any])
             }
+            
             
             let maskLayer = CALayer()
             maskLayer.backgroundColor = UIColor.clear.cgColor
